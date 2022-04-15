@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: white;
+    font-family: "roboto", sans-serif;
+    max-width: 1320px;
+    margin: 0 auto;
+    }
+
+h3{
+    font-size: .8rem;
+}
+header{
+    border-bottom: 2px solid orangered;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+
+ul p{
+    text-align: right;
+    }
+section h4{
+    text-align: center;
+}
+  
+header img {
+    width: 700px;
+    height: 220px;
+}
+
+li{
+    display: inline-block;
+    margin: 15px;
+    align-items: bottom;
+    }
+
+a{
+    color: blue;
+    text-decoration: none;
+         
+}
+
+a:hover{
+    color: #ff4500;
+    transition: 0.3s all;
+}
+form h4{
+    padding:0;
+    margin: 0;
+    text-align: left;
+}
+form{
+    display: block;
+    width: 70%;
+    justify-content: space-between;
+ 
+    }
+
+form div{
+    background: whitesmoke;
+    border: 0;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    border-bottom: 2px solid #ff4500;
+    width: 80%;
+    height: auto;
+    padding: 2px;
+    margin: 0;
+   
+  } 
+
+[type="text"], [type="e-mail"], textarea, label {
+	display: block;
+	width: 80%;
+    margin: 0;
+    padding:0;
+}
+    section h4{
+    width: 100%;
+    margin-top: 5px;
+        
+}
+
+.servicos{
+    display: inline-flex;
+    background-color: white;
+    border: 2px solid orangered;
+    margin: 1.8rem;
+    padding: .8rem;
+  
+
+}
+
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 2px;
+    color: blue;
+    text-align: center;
+    width: 100%;
+   
+}
+
+article p{
+    border-bottom: 2px solid #ff4500;
+    margin: 5px;
+    align-items: center;
+    padding: 5px;
+}
+footer{
+    text-align: lef;
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p{
+    text-align: right;
+}
