@@ -1,97 +1,132 @@
 
 html {
     
-    margin: 2px 2px 2px 2px;
     font-size: 62.5%;
     }
 
 body {
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
-    
 }
-
+ 
 .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2px;
     display: block;
+    width: 100%;
+    margin: 0 auto;
+   
 }
 
+.container {
+    display: block;
+    float: left;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1198px;
+}
 header {
     background: #fff;
     width: 100%;
     float: left;
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid orangered;
  }
 
 h1{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     padding-bottom: 10px;
+    color: rgb(1, 1, 146);
 }
 
 h2{
     font-size: 1.8rem;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: rgba(6, 6, 160, 0.808);
 }
 
 h3{
     font-size: 1.8rem;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(6, 6, 160, 0.808);
 }
 
 h4{
     font-size: 1.8rem;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(6, 6, 160, 0.808);
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: rgba(6, 6, 160, 0.808);
+}
+p{
+
+    margin-bottom: 10px;
+    line-height: 1.4;
+
+}
+
+img{
+
+    max-width: 100%;
+    height: auto;
+}
+.img {
+
+    width: 100%;
+    height: auto;
+}
+}
+.img-logo{
+    width: 100%;
+    height: auto;
 }
 
 section {
     background: #fff;
-    display: block;
-    float: left;
+    
+    
     width: 100%;
-    font-size: 1.4rem;
-    margin: 2px 11px 0 auto;
-
+    font-size: 1.5rem;
+    padding: 20px;
+    
 }
 
 section nav{
     display: block;
     float: left;
-    width: 25%;
-    margin: 10px 20px 10px 0;
-    
-   
+    width: 30%;
+        
 }
 
 nav li {
-    
-    font-size: 1.6rem;
     background-color:rgba(255, 68, 0, 0.651);
-    margin: 1px 20px 1px 0;
-    padding: 15px;
+    margin: 5px 20px 5px 0;
+    padding: 10px;
+    font-size: 1.8rem;
 }
 nav a{
     text-decoration: none;
-    margin: 2px;
-       
+           
 }
 
 nav a:hover{
-    color: rgba(11, 11, 235, 0.911);
+    color: rgb(1, 1, 146);
 }
 section article {
     display: block;
     float: left;
-    width: 75%;
-      
-}
+    width: 70%;
+    }
 
-article p{
-    padding-bottom: 10px;
-}
 
-footer{
-    background-color: rgba(11, 11, 235, 0.911);
+
+    footer{
+    background-color: rgb(1, 1, 146);
     width: 100%;
     display: block;
     float: left;
@@ -101,7 +136,7 @@ footer{
 }
 
 footer p{
-   font-size: 1.4rem;
+   font-size: 1.5rem;
 }
 
 footer small {
