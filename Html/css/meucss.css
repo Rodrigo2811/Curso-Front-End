@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@300&display=swap');
 
+html{
+    max-width: (1198px);
+}
+
 body {
     background-color: white;
     font-family: "roboto", sans-serif;
@@ -11,6 +15,7 @@ h3{
     font-size: .8rem;
 }
 header{
+    margin-top: 15px;
     border-bottom: 2px solid orangered;
     color: blue;
     display: flex;
@@ -116,13 +121,21 @@ article p{
     padding: 5px;
 }
 footer{
-    text-align: lef;
-    background-color: white;
+    text-align: left;
+    background-color: orangered;
     color: blue;
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+}
+
+footer h3 {
+    margin-left: 10px;
 }
 footer p{
+    margin-right: 10px;
     text-align: right;
 }

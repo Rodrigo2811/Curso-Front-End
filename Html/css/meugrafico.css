@@ -7,8 +7,10 @@
 
 }
 .imagem-home{
-    width: 80%;
+    width: 100%;
     cursor: pointer;
+    
+    margin-top: 15px;
     
 }
 
