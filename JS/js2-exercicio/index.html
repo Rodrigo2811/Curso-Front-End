@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="/js2-exercicio/exercicio_2.js"></script>
+    <script type="text/javascript" src="./exercicio.js"></script>
+    <link rel="stylesheet" href="./index.css">
     <title>Exercicio</title>
 </head>
+
 <body>
+        
+    <div class="container">
+      <h1>Exercício Módulo 13 javascript</h1>
+    <section>
+        <h3>Exercício 01 </h3>
+        <div class="lista_01">
 
-  
-    <label>Valor do Carro</label>
-    <input type="text" id="valor1">
-    <label>Valor Prestação</label>
-    <input type="text" id="valor2">
-    
-    <button onclick="obterPrestacao()">Calcular Prestações</button>
+            <ul>
+                <li> 10 + 15 = 25 (numer)</li>
+                <li> "10" + 2 = 102 (string) </li>
+                <li> "10" * 2 = 20 (number)</li>
+                <li> "10" / 3= 3.33333 (number)</li>
+                <li> "10" % 3 = 1 (number)</li>
+                <li> 10 + true = 11 (number)</li>
+                <li> 10 == "10" = true (boolean)</li>
+                <li> 10 === "10" = false (boolean)</li>
+                <li> 10 < 11=true (boolean)</li>
+                <li> 10 > 12 = false (boolean)</li>
+                <li> 10 <= 10.1=true (boolean)</li>
+                <li> 10 > 9.99 = true (boolean)</li>
+                <li> 10 != "dez" = true (boolean)</li>
+                <li> 10 + true = 11 (number)</li>
+                <li> "dez" + true = deztrue (string)</li>
+                <li> 10 + false = 10 (number)</li>
+                <li> 10 * false = 0 (number)</li>
+                <li> true + true = 2 (number)</li>
+                <li> 10 ++ = sem resultado (incremento)</li>
+                <li> 10 -- = sem resultado (decremento)</li>
+                <li> 1 & 1 = 1 (number)</li>
+                <li> 1 & 0 = 0 (number)</li>
+                <li> 0 & 0 = 0 (number)</li>
+                <li> 1 & 0 = 0 (number)</li>
+                <li> 0 / 1 = 0 (number)</li>
+                <li> 5 + 5 == 10 = true (boolean)</li>
+                <li> "5" * 2 > 9 = true (boolean)</li>
+                <li> (10 + 10) * 2 = 40 (number)</li>
+                <li> 10 + 10 * 2 = 30 (number)</li>
+            </ul>
+        </div>
 
-    <div id="resultado()"></div>
+        <div class="form_01">
+            <h3>Exercício 02.01 - Valor das Prestações</h3>
 
-    
+            <p><label>Valor do Carro</label></p>
+            <input type="text" placeholder="Digie o valor do carro" id="valor_carro">
+            <p><label>Entrada do Carro</label></p>
+            <input type="text" placeholder="Digite o valor da entrada" id="valor_entrada">
+            <p><label>Valor Prestação</label></p>
+            <input type="text" placeholder="Digite o valor da Parcela" id="valor_prestacao">
+
+            <p><button onclick="obterPrestacao()">Calcular Prestações</button>
+            <div id="resultado"></div></p>
+
+        </div>
+        <article>
+            
+            <div class="form_02">
+                <h3> Exercício 02.02 - Calcule a Quantidade de Caracteres.</h3>
+                <p><label>Cor - Branco</label></p>
+                <input type="text" placeholder="Digite a cor" id="cor_01">
+                <p><label>Cor - Preto</label></p>
+                <input type="text" placeholder="Digita a cor" id="cor_02">
+                <p><label>Cor - Cinza</label></p>
+                <input type="text" placeholder="Digite a cor" id="cor_03">
+                <p><label>Cor Carro</label></p>
+                <input type="text" placeholder="digite a cor" id="cor_04">
+
+                <p></p><button onclick="obterSoma()"> Calcular caracteres</button>
+                <div id="resultado02"></div></p>
+
+            </div>
+        </article>
+    </div>
+    </Section>
 </body>
+
 </html>

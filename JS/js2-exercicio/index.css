@@ -1,0 +1,68 @@
+html{
+   
+    background-color: azure;
+    font-size: 62.5%;
+   
+}
+.container{
+    display: block;
+    float: center;
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h1{
+
+    font-size: 2rem;
+    color: blue;
+    text-align: center;
+}
+h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-top: 1px solid blue;
+}
+ul{
+    display: block;
+    columns: 2;
+    font-size: 1.4rem;
+    margin: 2px;
+    width: 100%;
+    
+}
+
+.form_01{
+    font-size: 1.6rem;
+    margin: 2px;
+    padding-bottom: 25px;
+}
+
+.form_02{
+    font-size: 1.6rem;
+    margin: 2px;
+    padding-bottom: 25px;
+}
+
+p, label{
+    margin-bottom: 2px;
+}
+@media (min-width:425px){
+.container, h3, ul, .form_01, .form_02,
+p, label li{
+    width: 100%;
+    height: auto;
+}}
+   
+@media (max-width:1198px){
+    .container, h3, ul, .form_01, .form_02,
+    p, label li{
+        width: 100%;
+        height: auto;
+    }}
+    
+

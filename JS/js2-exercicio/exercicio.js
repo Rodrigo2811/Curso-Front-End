@@ -36,31 +36,37 @@
  * Resposta B - true;
  * Resposta c - false;
  * Resposta D - true;
- * Resposta E - 
- * Resposta F - 21 caracteres.
  */
-/**
- * {
- var branco = "preto";
- var preto = "cinza";
- var cinza = "branco";
- var carro = "preto";
- var valor = 30000;
- var prestacao = 750; 
 
- var resultado = (branco + preto + cinza + carro);
+ function obterSoma() {
 
-console.log(resultado)
+    var branco = "preto";
+    var preto = "cinza";
+    var cinza = "branco";
+    var carro = "preto";
+        
+    var branco = String(document.getElementById("cor_01").value);
+    var preto = String(document.getElementById("cor_02").value);
+    var cinza = String(document.getElementById("cor_03").value);
+    var carro = String(document.getElementById("cor_04").value);
+
+
+    let qtd = (branco + preto + cinza + carro);
+
+    Number(document.getElementById("resultado02").innerHTML = "Quantidade Caracteres: " + qtd.length);
+   
+}
+
+
+function obterPrestacao() {
+
+    var valor = Number(document.getElementById("valor_carro").value);
+    var prestacao = Number(document.getElementById("valor_prestacao").value);
+    var entrada = Number(document.getElementById("valor_entrada").value);
+
+    let prestacoes = (valor - entrada) / prestacao;
+
+   Number(document.getElementById("resultado").innerHTML = "Prestações: " + prestacoes);
 
 }
 
- */
-function obterPrestacao(){
-var valor = 30000;
-var prestacao = 750; 
-
-let prestacoes = (valor / prestacao);
-
-document.getElementById(prestacoes).innerHTML = "Prestações: ";
-
-}
