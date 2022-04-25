@@ -92,25 +92,25 @@ form div{
 }
 
 .servicos{
-    display: inline-flex;
+    display: block;
     background-color: white;
-    border: 2px solid orangered;
-    margin: 1.8rem;
-    padding: .8rem;
+    
+    margin: 1.4rem;
+    padding: 2px;
   
 
 }
 
 
 article{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+    display: inline;
+    align-items: left;
+
+
     margin-top: 2px;
     color: blue;
-    text-align: center;
-    width: 100%;
+    text-align: left;
+   
    
 }
 
