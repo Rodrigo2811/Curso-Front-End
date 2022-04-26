@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./meuestilo.css">
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Route</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Route</h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="titulo1">Sobre nós</h2>
+                    <p>Fundada em 2008, a Loja Route é uma empresa especializada na comercialização de veículos novos e semi-novos. Localizada na Avenida Europa, bairro nobre de São Paulo, nosso showroom conta com um espaço moderno e sofisticado para melhor atender seus clientes, parceiros e amigos, mantendo a tradição que a empresa traz nas vendas e pós-vendas, tornando-se referência no mercado local e nacional para compra e venda de importados.</p>
+                 </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./img/logo.jpg" alt="logo" class="img-fluid" id="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="titulo2">Importados</h2>
+                    <div class="card">
+                        <img src="./img/carro1.jpg" alt="veiculo1" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes-Benz</h5>
+                            <p class="card-text">Todos os modelos esportivos da Mecedez  você encontra aqui na Route. Venha conferir.</p>
+                            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Consultar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carro2.jpg" alt="veiculo2" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Ranger Rover</h5>
+                            <p class="card-text">Confira os modelos da Ranger Rouver que estão com um grande desconto. Venha conferir.</p>
+                            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Consultar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carro3.jpg" alt="veiculo3" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi</h5>
+                            <p class="card-text">Confira aqui o novo modelo esportivo da Audi que vem com o dobro de cavalos que seu ultimo lançamento. </p>
+                            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Consultar</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="tcontato">Contato</h2>
+                    <p class="tcontato">Quer comprar um importado? Preencha o formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form" method="post">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea  class="form-control" name="" rows="5" placeholder="Ditie sua mensagem"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success" id="btn-form">Solicitar Cotação</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os modelos e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mercedes-Benz 500</td>
+                                <td>R$ 75.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Mercedes-benz 700</td>
+                                <td>R$ 95.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Mercedes-Benz R</td>
+                                <td>R$ 100.000,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footter">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-2" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ranger Rover</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os modelos e os preços</h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ranger Roveer 500</td>
+                                    <td>R$ 75.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes-benz 700</td>
+                                    <td>R$ 95.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes-Benz R</td>
+                                    <td>R$ 100.000,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footter">
+                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-3" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Audi</h5>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Confira os modelos e os preços</h6>
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Modelo</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Audi 500</td>
+                                        <td>R$ 75.000,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mercedes-benz 700</td>
+                                        <td>R$ 95.000,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mercedes-Benz R</td>
+                                        <td>R$ 100.000,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footter">
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+        
+        </body>
+</html>
