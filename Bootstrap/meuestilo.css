@@ -4,6 +4,7 @@ html{
     font-size: 62.5%;
     margin: 5px auto;
     border: 20px solid rgb(9, 34, 104);
+    padding: 10px;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 5rem;
     color: rgb(9, 34, 104);
     margin-left: 20px;
 }
@@ -40,11 +41,19 @@ header{
     
    
 #sobre{
-    margin-top: 20px;
-    margin-left: 60px;
+   margin: 0 30px 0 30px;
+    
     
 }
+
 .tcontato{
+    font-size: 3rem;
+    margin-top: 5px;
+     margin-left: 20px;
+     color: rgb(9, 34, 104);
+}
+.pcontato{
+     margin-top: 5px;
     margin-left: 20px;
     color: rgb(9, 34, 104);
 }
@@ -54,13 +63,13 @@ header{
 }
 
 .titulo1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(9, 34, 104);
 
 }
 .titulo2{
-    margin: 20px;
-    font-size: 2.5rem;
+    margin: 15px;
+    font-size: 3.5rem;
     color: rgb(9, 34, 104);
 
 }
@@ -71,7 +80,8 @@ header{
 }
 
 section{
-    margin: 20px;
+    margin: 50px;
+    padding: 10px;
 }
    
 a:hover{
@@ -99,8 +109,18 @@ a:hover{
     margin: 13px;
     margin-top: 5px;
     padding: 5px;
+    font-size: 12px;
 }
 .form-control:focus{
     border-color:#0d6efd;
 
+}
+
+.carousel-item{
+     height: 650px;
+}
+
+footer{
+    margin-left: 25px;
+    color: rgb(9, 34, 104);
 }
