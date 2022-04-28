@@ -1,8 +1,7 @@
 
-document.addEventListener('submit', function( evento ){
+let salario = 1212;
+let inss = 8;
 
-evento.preventDefault();
+let resultado = (salario * inss);
 
-
-
-});
+console.log = (resultado);
