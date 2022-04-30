@@ -82,8 +82,15 @@ header{
 section{
     margin: 50px;
     padding: 10px;
+  
 }
-   
+
+.textologo {
+
+    margin-left: 20px;
+}
+
+
 a:hover{
     color:rgb(8, 247, 8) !important;
     transition: 0.5s all;
