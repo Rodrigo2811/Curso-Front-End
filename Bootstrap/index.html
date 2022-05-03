@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./meuestilo.css">
     <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+    <script src="./script.js"></script>
     <title>Route</title>
 </head>
 <body>
@@ -91,7 +92,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ranger Rover</h5>
                             <p class="card-text">Confira os modelos da Ranger Rouver que estão com um grande desconto. Venha conferir.</p>
-                            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Consultar</a>
+                            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-2"> Consultar </a>
                         </div>
                     </div>
                     <div class="card">
@@ -115,35 +116,35 @@
                     <p class="pcontato">Quer comprar um importado? Preencha o formulário para receber uma cotação.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <form class="form" method="post">
+                    <form class="form" method="post" action="#" onsubmit= "return validaCampo(this);">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
+                            <input class="form-control" type="text" class="nome" name="nome" placeholder="Digite seu nome">
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="Digite seu email" required>
+                            <input class="form-control" type="text"  class="email" name="email" placeholder="Digite seu email" >
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="endereço" placeholder="Digite endereço" required>
+                            <input class="form-control" type="text" name="endereço" placeholder="Digite endereço">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="complemento" placeholder="Digite o complemento" required>
+                            <input class="form-control" type="text" name="complemento" placeholder="Digite o complemento">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="bairro" placeholder="Digite o bairro" required>
+                            <input class="form-control" type="text" name="bairro" placeholder="Digite o bairro">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="cep" placeholder="Digite o cep" required>
+                            <input class="form-control" type="text" name="cep" placeholder="Digite o cep" >
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="telefone" placeholder="Digite telefone" required>
+                            <input class="form-control" type="text"  class="fone" name="telefone" placeholder="Digite telefone">
                         </div>
                         <div class="input-group">
-                            <textarea  class="form-control" name="" rows="5" placeholder="Digite sua mensagem"></textarea required>
+                            <textarea  class="form-control"  class="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success" id="btn-form">Solicitar Cotação</button>
+                        <button type="submit" onclick="validaCampo()" class="btn btn-lg btn-success" id="btn-form">Solicitar Cotação</button>
                     </form>
                 </div>
             </div>
