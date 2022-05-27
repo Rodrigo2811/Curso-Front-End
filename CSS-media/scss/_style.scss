@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+     
+}
+
+nav, ul, li{
+    display: flex;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: orangered;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    color: orangered;
+}
+
+    
+
+
+.imagens{
+    align-content: center;
+    display: flex;
+    margin-left: 50px; 
+   
+      }
+
+  
+.container-img{
+   
+    margin: 0 80px;
+    display: flex;
+}
+
+
+@import "imagens.scss";
+@import "footer.scss";
+@import "animacao.scss";
+@import "video.scss";
