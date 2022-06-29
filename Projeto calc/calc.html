@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./estilo.css">
+<script src="./js/script.js"></script>
+<title>Calculadora</title>
+</head>
+	
+	<body>
+
+		<div class="container">
+		
+			<div class="titulo">
+				<h2>Calculadora</h2>
+			</div>
+		
+			<div>
+				<form method="dialog">
+				
+					<label for="valor">Valor Conta R$</label>
+
+					<p>
+						<input type="Number" name="valor_da_conta" id="valor_conta" placeholder="Digite o valor">
+					</p>
+				
+					<label for="servico">Qualidade Serviço</label>
+					
+					<p>
+						<select name="gorjeta" id="gorjeta">
+							<option value="0" >Escolha</option>
+							<option value="0.3"> 30% - Otimo</option>
+							<option value="0.2"> 20% - Bom</option>
+							<option value="0.1"> 10% - Regular</option>
+							<option value="0.05"> 5% - ruim</option>
+						</select>
+					</p>
+
+					<label for="pessoas">Quantas Pessoas Vão Dividir a Conta?</label>
+					
+					<p>
+						<input type="Number" name="qtd_pessoas" id="qtd_pessoas" placeholder="Informe a quantidade">
+					</p>
+
+					<button onclick="calcular()" type="submit" value="Calcular">
+						Calcular
+					</button>
+
+				</form>
+
+				<div id="valor_por_pessoa"></div>
+
+			</div>
+		</div>
+
+	</body>
+</html>

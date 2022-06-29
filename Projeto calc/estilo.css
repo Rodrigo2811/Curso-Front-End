@@ -1,0 +1,65 @@
+root:{
+
+	--primary-color: lightcoral;
+	--secondary-color: dimgrey;
+	--terciary-color: gainsboro;
+}
+
+
+body{
+	background-color: lightcoral;
+	
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.container{
+
+	height: 400px;
+	width: 300px;
+	margin: 100px auto;
+	background-color: burlywood;
+	box-shadow: 5px 5px 5px azure;
+	border-radius: 20px;
+}
+
+form{
+	font-weight: bold;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding: right 20px;
+	font-size: 14px;
+}
+
+.titulo {
+	text-align: center;
+	padding: 2px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px ;
+	background-color: grey;
+	font-weight: normal;
+
+	}
+	label{
+		padding: 0;
+		margin: 1px;
+	}
+
+	input:focus{
+		color: lightcoral;
+		
+	}
+
+	button{
+
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+		width: 150px;
+		height: 40px;
+		display: block;
+		margin: 10px auto;
+		background-color: lightcoral;
+		border-radius: 10px;
+
+	}
