@@ -3,13 +3,11 @@
     padding: 0;
     font-size: 62.5%;
     box-sizing: border-box;
-    text-decoration: none !important;
  
 }
 html{
     font-size: 62.5%;
     box-sizing: border-box;
-    text-decoration: none !important;
 }
 
 body {
@@ -28,7 +26,7 @@ body {
     display: block;
     float: left;
     padding: 10px;
-    text-decoration: none;
+    
     margin: 0 auto;
     max-width: 1098px;
 }
@@ -38,7 +36,7 @@ header {
     float: left;
     display: block;
     padding: 20px;
-    border-bottom: 2px solid rgba(255, 68, 0, 0.651);
+    border-bottom: 2px solid orangered;
  }
 
 h1{
@@ -48,7 +46,6 @@ h1{
 }
 
 h2{
-    border-bottom: 2px solid rgba(255, 68, 0, 0.651);
     font-size: 2.2rem;
     margin-bottom: 10px;
     color: rgba(6, 6, 160, 0.808);
@@ -110,38 +107,19 @@ section nav{
 }
 
 nav li {
-  
-    border-radius: 2px;
-    cursor: pointer;
-    width: 300px;
-    display: inline-block;
-    z-index: 1;
-    list-style: none;
-    text-decoration: none;
-    margin: 2px 20px 5px 0;
-    font-size: 3rem ;
-
-}
-nav a{
-   
-    border-radius: 20px;
-    cursor: pointer;
-    width: 300px;
-    display: inline-block;
-    z-index: 1;
-    list-style: none;
     text-decoration: none;
     background-color:rgba(255, 68, 0, 0.651);
+    margin: 5px 20px 5px 0;
     padding: 10px;
-    font-size: 2rem ;
+    font-size: 1.8rem ;
+}
+nav a{
     text-decoration: none;
            
 }
 
 
 nav a:hover{
-    transition: 2s all;
-    font-size: 2.6rem;
     color: rgb(1, 1, 146);
 }
 section article {
@@ -264,8 +242,55 @@ footer small {
     color: rgba(6, 6, 160, 0.808) !important;
 }
 
-.t_contato{
-    font-size: 2.5rem;
+label{
+    margin-left: 25px !important;
+    font-size: 2rem !important;
+}
+
+#cog-input-auto-1{
+    padding-left: 5px !important;
+    margin-left: 2px !important;
+}
+
+input{
+
+    width: 70% !important;
+}
+
+textarea{
+    width: 70% !important;
+}
+.el-input__inner{
+    font-size: 1.6rem !important;
+    margin-left: 20px !important;
+    border-radius: 15px !important;
+    
+}
+
+.el-button{
+    
+    font-size: 1.6rem;
+    margin-left: 20px !important;
+    width: 100px !important;
+    border-radius: 15px !important;
+    background: blue !important;
+}
+
+.cog-form__container{
+    margin-left: 20px !important;
+    background: rgba(177, 173, 172, 0.651) !important;
+}
+
+.form{
+  
+    width: 100%;
+   
+    margin-left: 280px;
+  
+}
+
+.cog-form__content{
+    background-color: whitesmoke !important;
 }
 
 .rodape{
@@ -273,51 +298,40 @@ footer small {
     margin:auto;
     padding-left: 250px;
 }
-                                                                                                                                          
+
+.cog-label{
+
+    margin-left: 25px !important;
+    font-size: 2rem !important;
+}
+
+.el-textarea__inner{
+    margin-left: 20px !important;
+    font-size: 2rem !important;      
+    width: 400px !important;                                                                                                                                                                                           
+
+}
+
+.el-textarea{
+    width: 390px !important;             
+
+}
+
+.cog-name__first-input{
+    margin-left: 2px !important;
+}
+#cog-input-auto-1 {
+    margin-left: 20px !important;
+}
 
 .cog-icon cog-i-cogicon{
     visibility: hidden !important;
 }
 
-.form{
-    margin-left: 320px;
+#cog-input-auto-0{
+    width: 100px 1 !important;
 }
 
-label{
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: rgb(1, 1, 146);
-}
-
-input{
-    border: 1px solid rgba(255, 68, 0, 0.651);
-    border-radius: 5px;
-    width: 350px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-textarea{
-    margin-top: 10px;
-    border: 1px solid rgba(255, 68, 0, 0.651);
-    border-radius: 5px;
-    font-size: 1.4rem;
-    width: 350px;
-}
-
-button{
-    border: 1px solid rgba(255, 68, 0, 0.651);
-    border-radius: 5px;
-    width: 350px;
-    height: auto;
-    font-size: 1.6rem;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-button:hover{
-    background-color: blue;
-    color: orange;
+.el-input{
+    width: 530px !important;
 }

@@ -9,14 +9,19 @@ function obterMedia(){
 
     
     document.getElementById("resultado").innerHTML ="Resultado: " + media.toFixed(2);
-    document.getElementById("situacao").innerHTML = "Situação: "; 
+    document.getElementById("situacao").innerHTML ="Status: " + "situacao"; 
+
     
-}if (media > 8) {
-        situacao = "Aprovado";
-    } else{
-        situacao = "reprovado";
+    if (media >= 8){
+        document.getElementById('situacao').innerHTML = "Aprovado";
+    }else{
+        document.getElementById("situacao").innerHTML = "Reprovado";
     }
-    
+
+
+}
+
+
 
  
  

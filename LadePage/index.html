@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/6603d8438e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/reset.css">
+
+    <link rel="stylesheet" href="./CSS/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:wght@300;400;700&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css">
+   
     <title>ServiDocs</title>
 </head>
 
@@ -30,11 +31,11 @@
         <section>
             <div class="container">
                 <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
+                  
+                        <li><a href="#">Home</li></a>
                         <li><a href="#">Sobre nós</a></li>
-                        <li><a href="newlestter.html">Tenho Interesse</a></li>
-                    </ul>
+                        <li><a href="newlestter.html">Tenho Interesse</li></a>
+                 
                 </nav>
 
                 <article>
@@ -53,7 +54,7 @@
                             <li>Elaboração de contratos extrajudiciais.</li>
                             <p>e mais.</p>
                         </ul>
-                        <h3>Quem pode utilizar nossos serviços?</h3>
+                        <h2>Quem pode utilizar nossos serviços?</h2>
 
                         <ul>
                             <li>Pessoa Física.</li>
@@ -66,10 +67,24 @@
                     </div>
                 </article>
 
-                <article>
+                <article class="fundo">
+                    <h3 class="t_contato">Contato</h3>
                     <div class="form">
-                        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="fJQyt_PHG0-AVsk2pP-XjA"
-                            data-form="1"></script>
+                        
+                        <form action="https://formsubmit.co/atendimentoservidocs@gmail.com" method="Post" >
+                            <label for="Nome">Nome</label><br>
+                            <input type="text" id="Nome" required placeholder="Digite  seu nome"><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" required placeholder="Digite o email"><br>
+                            <label for="telefone">Telefone</label><br>
+                            <input type="text" placeholder="Digite o telefone"><br>
+                            <label for="mensagem">Mensagem</label><br>
+                            <textarea name="mensagem" id="mensagem" cols="10" rows="10" required placeholder="Sua mensagem"></textarea><br>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://www.servidocs.com.br/form.html">                         
+                            <button type="submit"> Enviar</button>
+                            
+                           </form>
                     </div>
                 </article>
             </div>
@@ -84,22 +99,19 @@
                 <p>atendimentoservidocs@gmail.com</p>
 
             </div>
-          
-            
+                      
                 <div class="rede_social">
                     <p>Redes Sociais</p>    
 
-               
-                <a href="https://www.instagram.com/servidocs_/"><i class="fa-brands fa-instagram"
+              
+                <a href="https://www.instagram.com/servidocs_/" target="_blank"><i class="fa-brands fa-instagram"
                         target="_blank"></i></a>
                 <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"
                         target="_blank"></i></a><br>
 
             </div>
             <div class="rodape">
-                <p>&copy; ServiDocs. Todos os direitos reservados.
-                    <small>Desenvolvido por: Rodrigo Dominguez</small>
-                </p>
+                <p>&copy; ServiDocs. Todos os direitos reservados.</p>
             </div>
 
         </footer>
