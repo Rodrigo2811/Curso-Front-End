@@ -140,8 +140,8 @@ nav a{
 
 
 nav a:hover{
-    transition: 2s all;
-    font-size: 2.6rem;
+    background-color: orange;
+    transition: 1s all;
     color: rgb(1, 1, 146);
 }
 section article {
@@ -161,7 +161,7 @@ section article {
     footer{
         padding-top: -300px !important;
     background-color: rgb(1, 1, 146);
-    width: 100%;
+    width: 100%;    
     height: auto;
     display: flex;
     float: left;
@@ -183,16 +183,33 @@ footer small {
     font-size: 80%;
     display: flex;
 }
-@media (max-width: 810px){
-    section nav, section article, nav a, footer, img, form, p, i, input{
+@media (max-width: 960px){
+    section nav, section article, nav a, img,  i, input{
         width: 100%;
         height: auto;
-        display: block;
+        display: grid;
         
     }
-    
-    @media (min-width: 425px) {
-        section nav, section article,  nav a, img, form, p, i, input{
+        
+    @media (max-width: 980px){
+        footer .rede_social {
+            display: -ms-inline-grid;
+            font-size: 1rem;
+            padding-left: 10px;
+         }
+            
+        }
+
+        @media (max-width: 980px){
+            footer .rodape {
+                display: -ms-inline-grid;
+                font-size: 1rem;
+                padding-left: 10px;
+             }
+                
+            }
+    @media (min-width: 720px) {
+        section nav, section article,  nav a, img, i, input{
             width: 100%;
             height: auto;
         
@@ -201,35 +218,70 @@ footer small {
  }
 }
 
-@media (min-width: 425px) {
-                    footer {
-            width: 100%;
-            height: auto;
-            display: flex;
-        
-            
+@media (max-width: 876px){
+    .form{
+        display: contents;
+        margin-left: 10px;
     }
- }
 
- @media (max-width: 810px){
-                footer{
-        width: 100%;
-        height: auto;
-        display: flex;
+}
 
+@media (max-width: 792px){
+    footer .rede_social {
         
+       font-size: 1rem;
+       padding-left: 10px;
     }
+
+}
+    
+@media (max-width: 600px){
+    footer .rodape{
+        
+       font-size: 1rem;
+       padding-left: 10px;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 359px){
+        .form input{
+            width: 285px;
+        } 
+    
+        #mensagem{
+            width: 285px;
+        }
+        .form button{
+            width: 285px;
+        }
+       footer{
+        width: 0;
+        
+       }
+    }
+
+    
+   
     .rede_social{
         padding-left: 20px;
     }
+
+    .rede_social p{
+        margin-left: -7px;
+    }
+
     .rodape{
         padding-left: 20px;
     }
- }
+
 
 .fa-brands{
     font-size: 3rem;
-    width: 30px;
+    width: 15px;
     margin: 0 10px 0;
     margin-left: 15px;
     color: white;
@@ -246,7 +298,7 @@ footer small {
     display: flex;
     margin: 0 10px 0;
     font-size: 3rem;
-    width: 30px;
+    width: 15px;
 }
 
 .fa-solid:hover{
@@ -318,6 +370,47 @@ button{
 }
 
 button:hover{
-    background-color: blue;
+    background-color: rgb(14, 14, 185);
     color: orange;
+    
+}
+
+
+.caixa-mensagem{
+    width: 100%;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    position: absolute;
+}
+
+.caixa-mensagem h3{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.caixa-mensagem button {
+    top: 58%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    font-size: 1.6rem !important;
+    
+}
+
+.caixa-mensagem button a{
+    font-size: 1.6rem;
+    color: black;
+}
+
+
+.caixa-mensagem button a:hover{
+    color: orange;
+    
 }
