@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,14 @@
     <link rel="stylesheet" href="./dist/css/libs.min.css">
     <title>jQuery</title>
 </head>
+
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./dist/image/header-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,7 +41,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="banner">
         <div class="container">
             <div class="row">
@@ -52,7 +55,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="featured" class="featured-items">
         <div class="container">
             <div class="row">
@@ -141,7 +144,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="subscribe-form">
         <div class="container">
             <div class="row">
@@ -159,7 +162,8 @@
                                 <div class="row">
                                     <div class="col-md-7">
                                         <fieldset>
-                                            <input name="email" type="text" class="form-control" id="email" value="" placeholder="Seu e-mail..." >
+                                            <input name="email" type="text" class="form-control" id="email" value=""
+                                                placeholder="Seu e-mail...">
                                         </fieldset>
                                     </div>
                                     <div class="col-md-5">
@@ -175,7 +179,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -206,7 +210,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="sub-footer">
         <div class="container">
             <div class="row">
@@ -218,7 +222,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -227,7 +231,7 @@
                     <h5 class="modal-title">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">              
+                <div class="modal-body">
                 </div>
             </div>
         </div>
@@ -239,16 +243,18 @@
         <form action="post" class="form">
 
             <div class="mb-3">
-              <label for="nome" class="form-label">Nome</label>
-              <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
-              <small id="helpNome" class="text-muted">
-                  Digite um nome válido
-              </small>
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control"
+                    placeholder="Digite seu nome" aria-describedby="helpNome">
+                <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                </small>
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail"
+                    aria-describedby="helpEmail">
                 <small id="helpEmail" class="text-muted">
                     Digite um e-mail válido
                 </small>
@@ -256,7 +262,8 @@
 
             <div class="mb-3">
                 <label for="date" class="form-label">Data</label>
-                <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail"
+                    aria-describedby="helpDate">
                 <small id="helpDate" class="text-muted">
                     Digite uma data válida
                 </small>
@@ -264,7 +271,8 @@
 
             <div class="mb-3">
                 <label for="time" class="form-label">Hora</label>
-                <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora"
+                    aria-describedby="helpHora">
                 <small id="helpHora" class="text-muted">
                     Digite um tempo válido
                 </small>
@@ -272,7 +280,8 @@
 
             <div class="mb-3">
                 <label for="cep" class="form-label">CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP">
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep"
+                    aria-describedby="helpCEP">
                 <small id="helpCEP" class="text-muted">
                     Digite um tempo válido
                 </small>
@@ -280,7 +289,8 @@
 
             <div class="mb-3">
                 <label for="phone" class="form-label">Celular</label>
-                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone" aria-describedby="helpCelular" required>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone"
+                    aria-describedby="helpCelular" required>
                 <small id="helpCelular" class="text-muted">
                     Digite um celular válido
                 </small>
@@ -288,7 +298,8 @@
 
             <div class="mb-3">
                 <label for="cpf" class="form-label">CPF</label>
-                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCPF" required>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf"
+                    aria-describedby="helpCPF" required>
                 <small id="helpCPF" class="text-muted">
                     Digite um celular válido
                 </small>
@@ -304,21 +315,21 @@
 
     <div id="sobre" class="visually-hidden">
 
-        <p>Conheça a WebStore </p>
-        <p></p>
+        <p>A WebStore a mas de 10 anos vem renovando para deixar todos seus clientes na moda com o preço justo.</p>
 
     </div>
-    
+
     <div id="produtos" class="visually-hidden">
 
-        <p> </p>
-        <p>Na  WebStore Você Encontra Aquele Look Com Modelagem Confortável e Caimento Perfeito! Conheça os Lançamentos: As Calças Jeans YAN ACIOLI Chegaram No Site, Confira Já!</p>
+        <p>Na WebStore você encontra aquele look com modelagem confortável e caimento perfeito! Conheça os lançamentos:
+            As Calças Jeans YAN ACIOLI chegaram no site, Confira Já!</p>
 
     </div>
-        
-        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="./vendor/owl/js/owl.js"></script>
-        <script src="./assets/js/custom.js"></script>
-    </body>
-    </html>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
