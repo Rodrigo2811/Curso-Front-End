@@ -96,3 +96,13 @@ $('.nav-modal-open').on('click', function (e) {
    myModal.show()
 })
 
+$(docuument).ready(function(){
+   $("input").blur(function(){
+      if ($(this).val() == "")
+      {
+         $(this).css(
+            'border:', 'red'
+         )
+      }
+   })
+})
