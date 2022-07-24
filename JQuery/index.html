@@ -22,14 +22,14 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
+                        
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Produtos</a>
+                        <a class="nav-link" href="#">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-modal-open" href="Contact.html" rel="contato">Contato</a>
@@ -44,9 +44,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="caption">
-                        <h2>Ecommerce HTML Template</h2>
+                        <h2>WebStore</h2>
                         <div class="line-dec"></div>
-                        <p>HTML Template can be converted into your desired CMS theme. </p>
+                        <p>A melhor loja virtual. </p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <div class="owl-carousel owl-theme">
                         <div class="featured-item">
                             <img src="assets/images/item-01.jpg" alt="Item 1">
-                            <h4>Produto 1</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -74,7 +74,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-02.jpg" alt="Item 2">
-                            <h4>Produto 2</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -82,7 +82,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-03.jpg" alt="Item 3">
-                            <h4>Produto 3</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -90,7 +90,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-04.jpg" alt="Item 4">
-                            <h4>Produto 4</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -98,7 +98,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-05.jpg" alt="Item 5">
-                            <h4>Produto 5</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -106,7 +106,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-06.jpg" alt="Item 6">
-                            <h4>Produto 6</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -114,7 +114,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-04.jpg" alt="Item 7">
-                            <h4>Produto 7</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -122,7 +122,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-05.jpg" alt="Item 8">
-                            <h4>Produto 8</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -130,7 +130,7 @@
                         </div>
                         <div class="featured-item">
                             <img src="assets/images/item-06.jpg" alt="Item 9">
-                            <h4>Produto 9</h4>
+                            <h4>Produto </h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">
                                 Comprar
@@ -206,7 +206,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-primary" id="botao">Save</button>
                     </div>
                 </div>
             </div>
@@ -214,7 +214,7 @@
         
         <div id="contato" class="visually-hidden">
                        
-              <form action="post" class="form">
+              <form action="" class="form" method="post" id="form-contato">
 
                 <div class="mb-3">
                   <label for="nome" class="form-label">Nome</label>
@@ -224,11 +224,32 @@
                   </small>
                 </div>
 
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpNome">
+                    <small id="helpEmail" class="text-muted">
+                      Digite um e-mail válido
+                    </small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone" aria-describedby="helpNome">
+                    <small id="helpTelefone" class="text-muted">
+                      Digite o telefone
+                    </small>
+                  </div>
+
+                 <div class="mb-3">
+                    <label for="my-textarea">Mensagem</label>
+                    <textarea id="mensagem" class="form-control" name="mensagem" rows="3" placeholder="Digite aqui sua mensagem"></textarea>
+                 </div>
+
               </form>
         </div>
 
         <div id="sobre">
-
+            <p>Somos a mas nova e-commerce</p>
         </div>
         
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>

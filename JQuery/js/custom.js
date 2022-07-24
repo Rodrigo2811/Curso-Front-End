@@ -57,11 +57,27 @@ $(document).ready(function () {
 
 
 
-   $('.btn').css({
-      'background': 'grey',
+   $(function(){
+		$(".btn").hover(function(){
+				//Ao posicionar o cursor sobre a botao
+				$(this).css('background', '#3a8bcd'
+                );
+			},
+			function(){
+				//Ao remover o cursor do botao
+				$(this).css(
+               'background', 'grey'
+               );
+			}
+		);
+	});
+        
    })
-})
 
+      $('.featured-items').css({
+      'background': '#bebed2',
+   })
+   
 $(document).ready(function () {
    $('social-icons').css({
       'width': '50px'
@@ -95,4 +111,41 @@ $('.nav-modal-open').on('click', function (e) {
 
    myModal.show()
 })
+
+
+$(document).ready(function () {
+   $('.sub-footer').css({
+      'background': 'blue',
+     
+   })
+
+   $('.sub-footer p').css({
+      'color': '#eee'
+   })
+})
+  
+
+$(document).ready(function(){
+   $("input").blur(function(){
+    if($(this).val() == "")
+        {
+            $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+        }
+   });
+   $("#botao").click(function(){
+    var cont = 0;
+    $("#form-contato input").each(function(){
+        if($(this).val() == "")
+            {
+                $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                cont++;
+            }
+       });
+    if(cont == 0)
+        {
+            $("#form-contato").submit();
+        }
+   });
+});
+
 
