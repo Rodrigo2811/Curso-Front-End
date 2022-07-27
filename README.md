@@ -4,6 +4,8 @@ Material curso
 
 # Curso-Front-End
 
+Aqui estou postando todos os projetos e exercicios feitos no curso.
+
 
 # Git
 ## Versionamento
