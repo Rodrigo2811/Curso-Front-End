@@ -1,0 +1,134 @@
+html{
+    max-width: 1320px;
+    height: auto;
+    font-size: 62.5%;
+    margin: 5px auto;
+    border: 20px solid rgb(9, 34, 104);
+    padding: 10px;
+}
+
+body{
+    font-size: 1.8rem;
+    max-width: 100%;
+    
+}
+
+.card{
+    width: 30%;
+    float: left;
+    margin: 18px;
+   
+}
+.card-title{
+    color: #0d6efd;
+}
+
+h1{
+    font-size: 5rem;
+    color: rgb(9, 34, 104);
+    margin-left: 20px;
+}
+p{ 
+    text-align: justify;
+    color: rgb(9, 34, 104);
+
+}
+
+header{
+    padding: 40px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+    
+   
+#sobre{
+   margin: 0 30px 0 30px;
+    
+    
+}
+
+.tcontato{
+    font-size: 3rem;
+    margin-top: 5px;
+     margin-left: 20px;
+     color: rgb(9, 34, 104);
+}
+.pcontato{
+     margin-top: 5px;
+    margin-left: 20px;
+    color: rgb(9, 34, 104);
+}
+
+#logo{
+    margin-left: 50px;
+}
+
+.titulo1{
+    font-size: 3rem;
+    color: rgb(9, 34, 104);
+
+}
+.titulo2{
+    margin: 15px;
+    font-size: 3.5rem;
+    color: rgb(9, 34, 104);
+
+}
+
+.card-text{
+    color: rgb(9, 34, 104);
+
+}
+
+section{
+    margin: 50px;
+    padding: 10px;
+  
+}
+
+.textologo {
+
+    margin-left: 20px;
+}
+
+
+a:hover{
+    color:rgb(8, 247, 8) !important;
+    transition: 0.5s all;
+
+}
+
+#btn-form{
+    margin-left: 15px;
+    background-color: white;
+    border-color: #0d6efd;
+    color: #0d6efd;
+
+    
+}
+
+#btn-form:hover{
+    background-color: #0d6efd;
+    color:rgb(8, 247, 8);
+
+}
+
+.form-control{
+    margin: 13px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+.form-control:focus{
+    border-color:#0d6efd;
+
+}
+
+.carousel-item{
+     height: 650px;
+}
+
+footer{
+    margin-left: 25px;
+    color: rgb(9, 34, 104);
+}
+
