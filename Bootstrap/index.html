@@ -116,7 +116,7 @@
                     <p class="pcontato">Quer comprar um importado? Preencha o formulário para receber uma cotação.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <form class="form" method="post" action="#" onsubmit= "return validaCampo(this);">
+                    <form class="form" method="post" action="#" onsubmit= "return validaCampo(this);" onblur="pesquisacep(this.value);">
 
                         <div class="input-group">
                             <input class="form-control" type="text" class="nome" name="nome" placeholder="Digite seu nome">
@@ -126,20 +126,27 @@
                             <input class="form-control" type="text"  class="email" name="email" placeholder="Digite seu email" >
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="endereço" placeholder="Digite endereço">
+                            <input class="form-control" type="text"  class="fone" name="telefone" placeholder="Digite telefone">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="cep" placeholder="Digite o cep" id="cep" onblur="pesquisacep(this.value);" />
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="endereço" placeholder="Digite endereço" id="rua">
                         </div>
                         <div class="input-group">
                             <input class="form-control" type="text" name="complemento" placeholder="Digite o complemento">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="bairro" placeholder="Digite o bairro">
+                            <input class="form-control" type="text" name="bairro" placeholder="Digite o bairro" id="bairro">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text" name="cep" placeholder="Digite o cep" >
+                            <input class="form-control" type="text" name="cidade" placeholder="Digite o bairro" id="cidade">
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="text"  class="fone" name="telefone" placeholder="Digite telefone">
+                            <input class="form-control" type="text" name="UF" placeholder="Digite a UF" id="uf">
                         </div>
+                        
                         <div class="input-group">
                             <textarea  class="form-control"  class="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
                         </div>
