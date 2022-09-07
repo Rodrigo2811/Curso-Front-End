@@ -4,7 +4,7 @@ const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-const image = require('gulp-image')
+const image = ('gulp-image')
 const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
@@ -14,6 +14,7 @@ const sass = require('gulp-sass')(require('node-sass'))
 const { pipe } = require('stdout-stream')
 const { contains } = require('jquery')
 const reload = browserSync.reload
+
 
 function tarefasCSS(cb) {
 
