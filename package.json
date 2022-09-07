@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.0",
+    "gulp": "^4.0.2",
+    "http-server": "^14.1.1",
+    "jQuery": "^1.7.4",
+    "node": "^16.17.0",
     "react": "^18.2.0"
   }
 }
