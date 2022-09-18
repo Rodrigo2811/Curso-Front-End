@@ -1,7 +1,8 @@
 // Named Exports
-//export let cores = []
-//export function getName() { }
+export let cores = []
+export function getName() { }
 export class Animais { }
+
 
 // Lista de exportação
 export { cores, getName, Animais }

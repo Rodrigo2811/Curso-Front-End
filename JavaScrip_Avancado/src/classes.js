@@ -1,4 +1,4 @@
-class Animal {
+class animal {
 
   constructor(especie) {
     this.especie = especie
@@ -18,7 +18,7 @@ class Animal {
 
 }
 
-class Cachorro extends Animal {
+class Cachorro extends animal {
   falar() {
     console.log(this.especie + ' fala au au au')
   }

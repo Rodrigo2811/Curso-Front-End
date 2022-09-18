@@ -1,4 +1,4 @@
-"use strict"
+//"use strict"
 
 function Pessoa() {
 
@@ -10,4 +10,3 @@ function Pessoa() {
 
 }
 
-const p1 = new Pessoa()

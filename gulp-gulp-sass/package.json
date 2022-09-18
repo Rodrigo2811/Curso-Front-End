@@ -18,7 +18,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-image": "^6.2.1",
+    "gulp-image": "^6.3.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-strip-comments": "^2.5.2",
@@ -30,6 +30,8 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.0",
     "chalk": "^4.1.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
     "jquery": "^3.6.0"
   }
 }

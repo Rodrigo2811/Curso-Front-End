@@ -115,7 +115,7 @@ const process = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
-exports.images = tarefasImagem
+exports.image = tarefasImagem
 exports.sass = tarefasSASS
 
 exports.default = process
