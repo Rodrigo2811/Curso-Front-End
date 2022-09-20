@@ -1,14 +1,12 @@
-import servidocs from './lservidocs.jpg';
+import Dashboard from './Componentes/Dashboard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={servidocs} className="App-logo" alt="logo" />
-
-      </header>
+      <Dashboard />
     </div>
+
   );
 }
 
