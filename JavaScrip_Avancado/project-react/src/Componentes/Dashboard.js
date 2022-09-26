@@ -126,8 +126,7 @@ function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-
-              Dashboard
+              Painel de Controle
             </Typography>
             <ImageAvatars />
             <IconButton color="inherit">
@@ -224,5 +223,6 @@ function DashboardContent() {
 }
 
 export default function Dashboard() {
+
   return <DashboardContent />;
 }
