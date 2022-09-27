@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from '@testing-library/react'
+import App from './App'
 
-test('renders learn react link', () => {
+test('titulo', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+  // eslint-disable-next-line testing-library/no-node-access
+  const testCase = document.querySelector('.App h1')
+  expect(testCase).toHaveTextContent(/Meu Painel de Controle/i)
+})
