@@ -4,7 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <Dashboard title="Painel de Controle" />
+
     </div>
 
   );
