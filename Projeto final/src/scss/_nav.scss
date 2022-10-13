@@ -1,0 +1,50 @@
+.navbar {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.nav-brand {
+  padding-left: 100px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin-right: 160px;
+  margin-top: 15px;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 100px;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  font-size: 20px;
+  position: relative;
+}
+
+ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #0074FF;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+ul li a:hover::after {
+  width: 100%;
+  color: black;
+}
+
+ul li a:hover {
+  color: black;
+}

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/assest/Montserrat/static/Montserrat-Italic.ttf);
+}
+
+
+p {
+  font-size: 25px;
+  font-family: Montserrat;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+}
+
+section {
+  margin-top: 120px;
+}
+
+
+
+#transformacao {
+  display: flex;
+}
+
+#transformacao img {
+
+  margin-right: -20px;
+
+}
+
+#transformacao img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(.9);
+  transition: 1s ease;
+
+
+
+}
+
+.transformacao-text {
+  font-size: 22px;
+  font-family: Montserrat;
+  color: #595959;
+}
+
+
+
+.btn-transformacao {
+  border: 1px solid black;
+  padding: 12px;
+  width: 250px;
+  background: none;
+  color: #0074FF;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+}
+
+
+.btn-transformacao:hover {
+  width: 420px;
+  border: 1px solid #0074FF;
+}
+
+
+
+#localizacao {
+  text-align: center;
+
+}
+
+
+
+.circulo-preenchido {
+  width: 573px;
+  height: 573px;
+  border-radius: 350px;
+  margin-left: -180px;
+  background: rgba(0, 116, 255, 0.2);
+}
+
+.quadrado {
+  position: absolute;
+  width: 680px;
+  height: 294px;
+  left: 370px;
+  top: 1190px;
+  background: #E2E0E0;
+  box-shadow: 0px 7px 30px rgb(0 0 0 / 20%);
+}
+
+
+.borda {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 20px;
+
+}
+
+#servicos {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#servicos div.container {
+  margin-top: 100px;
+}
+
+.circulo-vazio {
+  width: 550px;
+  height: 550px;
+  border: 5px solid rgba(0, 116, 255, 0.2);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 500px;
+  margin-top: -180px;
+  margin-left: 150px;
+  z-index: 0;
+  position: relative;
+}
+
+.cartao {
+  text-align: center;
+  width: 280px;
+  height: 400px;
+  background-color: #0074FF;
+  color: white;
+  transition: .3s ease;
+  z-index: 1;
+  position: absolute;
+
+}
+
+.cartao h1 {
+  padding-top: 50px;
+
+}
+
+.cartao p {
+
+  font-family: sans-serif;
+  text-align: start;
+  font-size: 17px;
+  text-align: center;
+  position: relative;
+
+}
+
+.cartao:hover {
+  margin-top: -15px;
+}
+
+#segmentos {
+  text-align: center;
+}
+
+#segmentos .container {
+  text-align: center;
+}
+
+#segmentos h1 {
+  margin-top: 20px;
+}
+
+#segmentos p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.col-md-4 span {
+  padding: 30px 7px 30px 0;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-left: -300px;
+  text-align: start;
+
+}
+
+.col-md-4 p {
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 15px;
+}
