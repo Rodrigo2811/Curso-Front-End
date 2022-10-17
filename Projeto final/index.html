@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="src/css/mediaquery.css">--->
 </head>
+
 
 <body>
     <header>
@@ -19,7 +22,12 @@
 
             </div>
 
-            <div class="menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-expanded="true">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="menu navbar-collapse collapse" id="navbar">
                 <ul class="menu-item">
                     <li class="nav-item" onclick="ative()"><a href="#transformacao">Início</a></li>
                     <li class="nav-item" onclick="ative()"><a href="#localizacao">Localização</a></li>
@@ -27,11 +35,17 @@
                     <li class="nav-item" onclick="ative()"><a href="#segmentos">Segmentos</a></li>
                 </ul>
             </div>
+
+
+
+
         </nav>
     </header>
 
     <section id="transformacao">
+
         <div class="container">
+
             <div class="row">
                 <div class="col-md-6 container-img">
                     <img src="./src/img/alvo.png">
@@ -106,7 +120,8 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row" id="conteudos">
+
                 <div class="col-md-3">
                     <div class="cartao">
                         <h3> UX Design</h3><br>

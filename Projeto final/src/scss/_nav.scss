@@ -1,4 +1,5 @@
 .navbar {
+  display: inline-flex;
   margin-top: 50px;
   width: 100%;
 }
@@ -8,13 +9,15 @@
 }
 
 .menu ul {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-right: 160px;
-  margin-top: 15px;
+  margin-top: -35px;
+
 }
 
 ul li {
+  display: inline-flex;
   list-style: none;
   padding-left: 100px;
 
