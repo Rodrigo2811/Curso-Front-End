@@ -46,9 +46,10 @@ section {
 }
 
 .transformacao-text {
-  font-size: 22px;
+  font-size: 1.1rem;
   font-family: Montserrat;
   color: #595959;
+  text-align: initial;
 }
 
 .btn-transformacao {
