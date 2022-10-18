@@ -1,8 +1,27 @@
-function title() {
+import './style.scss'
+import img from './matrix.jpg'
 
-  const elem1 = document.createElement('h1')
-  elem1.innerHTML = 'Hello world'
-  return elem1
+
+function rootStyle() {
+  const elemRoot = document.getElementById('root')
+  elemRoot.classList.add('container')
 }
 
-document.body.appendChild(title())
+
+
+function titleComponent() {
+  const elemH1 = document.createElement('h1')
+  elemH1.innerHTML = 'Hello world 3'
+  elemH1.classList.add('title')
+  return elemH1
+}
+
+function imageComponent() {
+  const elemImg = new Image()
+  elemImg.src = img
+  return elemImg
+}
+
+rootStyle()
+document.getElementById('root').appendChild(titleComponent())
+document.getElementById('root').appendChild(imageComponent())
