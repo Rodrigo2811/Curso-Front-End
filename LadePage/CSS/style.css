@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
     box-sizing: border-box;
     text-decoration: none !important;
- 
+
 }
-html{
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
     text-decoration: none !important;
@@ -16,12 +17,12 @@ body {
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif !important;
 }
- 
+
 .main-container {
     display: block;
     width: 100%;
     margin: 0 auto;
-   
+
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
     margin: 0 auto;
     max-width: 1098px;
 }
+
 header {
     background: #fff;
     width: 100%;
@@ -39,29 +41,29 @@ header {
     display: block;
     padding: 20px;
     border-bottom: 2px solid rgba(255, 68, 0, 0.651);
- }
+}
 
-h1{
+h1 {
     font-size: 2.2rem;
     padding-bottom: 10px;
     color: rgb(1, 1, 146);
 }
 
-h2{
+h2 {
     border-bottom: 2px solid rgba(255, 68, 0, 0.651);
     font-size: 2.2rem;
     margin-bottom: 10px;
     color: rgba(6, 6, 160, 0.808);
 }
 
-h3{
+h3 {
     font-size: 2.2rem;
     padding-top: 10px;
     margin-bottom: 10px;
     color: rgba(6, 6, 160, 0.808);
 }
 
-h4{
+h4 {
     font-size: 1.8rem;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -72,45 +74,47 @@ h5 {
     font-size: 1.8rem;
     color: rgba(6, 6, 160, 0.808);
 }
-p{
+
+p {
 
     margin-bottom: 10px;
     line-height: 1.4;
 
 }
 
-img{
-    width:  40%;
+img {
+    width: 40%;
     height: auto;
 }
+
 .img {
     width: 100%;
     height: auto;
 }
 
-.img-logo{
+.img-logo {
     width: 100%;
     height: auto;
 }
 
 section {
     background: #fff;
-      width: 100%;
+    width: 100%;
     font-size: 1.5rem;
     padding: 20px;
-    
+
 }
 
-section nav{
-    text-decoration: none ;
+section nav {
+    text-decoration: none;
     display: block;
     float: left;
     width: 30%;
-        
+
 }
 
 nav li {
-  
+
     border-radius: 2px;
     cursor: pointer;
     width: 300px;
@@ -119,11 +123,12 @@ nav li {
     list-style: none;
     text-decoration: none;
     margin: 2px 20px 5px 0;
-    font-size: 3rem ;
+    font-size: 3rem;
 
 }
-nav a{
-   
+
+nav a {
+
     border-radius: 20px;
     cursor: pointer;
     width: 300px;
@@ -131,37 +136,39 @@ nav a{
     z-index: 1;
     list-style: none;
     text-decoration: none;
-    background-color:rgba(255, 68, 0, 0.651);
+    background-color: rgba(255, 68, 0, 0.651);
     padding: 10px;
-    font-size: 2rem ;
+    font-size: 2rem;
     text-decoration: none;
-           
+
 }
 
 
-nav a:hover{
+nav a:hover {
     background-color: orange;
     transition: 1s all;
     color: rgb(1, 1, 146);
 }
+
 section article {
     display: block;
     float: left;
     width: 70%;
-    }
+}
 
-    article ul li{
+article ul li {
 
-        font-size: 1.8rem;
-    }
+    font-size: 1.8rem;
+}
 
-    article ul p{
-        font-size: 1.8rem;
-    }
-    footer{
-        padding-top: -300px !important;
+article ul p {
+    font-size: 1.8rem;
+}
+
+footer {
+    padding-top: -300px !important;
     background-color: rgb(1, 1, 146);
-    width: 100%;    
+    width: 100%;
     height: auto;
     display: flex;
     float: left;
@@ -169,117 +176,133 @@ section article {
     padding: 50px;
     align-content: space-between;
     z-index: 1;
-    
+
 
 }
 
-footer p{
-   font-size: 1.5rem;
-   margin: auto;
-   padding: 10px;
+footer p {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 10px;
 }
 
 footer small {
     font-size: 80%;
     display: flex;
 }
-@media (max-width: 960px){
-    section nav, section article, nav a, img,  i, input{
+
+@media (max-width: 960px) {
+
+    section nav,
+    section article,
+    nav a,
+    img,
+    i,
+    input {
         width: 100%;
         height: auto;
         display: grid;
-        
+
     }
-        
-    @media (max-width: 980px){
+
+    @media (max-width: 980px) {
         footer .rede_social {
-            display: -ms-inline-grid;
+
             font-size: 1rem;
             padding-left: 10px;
-         }
-            
         }
 
-        @media (max-width: 980px){
-            footer .rodape {
-                display: -ms-inline-grid;
-                font-size: 1rem;
-                padding-left: 10px;
-             }
-                
-            }
+    }
+
+    @media (max-width: 980px) {
+        footer .rodape {
+
+            font-size: 1rem;
+            padding-left: 10px;
+        }
+
+    }
+
     @media (min-width: 720px) {
-        section nav, section article,  nav a, img, i, input{
+
+        section nav,
+        section article,
+        nav a,
+        img,
+        i,
+        input {
             width: 100%;
             height: auto;
-        
-            
+
+
+        }
     }
- }
 }
 
-@media (max-width: 876px){
-    .form{
+@media (max-width: 876px) {
+    .form {
         display: contents;
         margin-left: 10px;
     }
 
 }
 
-@media (max-width: 792px){
+@media (max-width: 792px) {
     footer .rede_social {
-        
-       font-size: 1rem;
-       padding-left: 10px;
+
+        font-size: 1rem;
+        padding-left: 10px;
     }
 
 }
-    
-@media (max-width: 600px){
-    footer .rodape{
-        
-       font-size: 1rem;
-       padding-left: 10px;
+
+@media (max-width: 600px) {
+    footer .rodape {
+
+        font-size: 1rem;
+        padding-left: 10px;
     }
-    
-    
-    
+
+
+
 }
 
 
-@media (max-width: 359px){
-        .form input{
-            width: 285px;
-        } 
-    
-        #mensagem{
-            width: 285px;
-        }
-        .form button{
-            width: 285px;
-        }
-       footer{
+@media (max-width: 359px) {
+    .form input {
+        width: 285px;
+    }
+
+    #mensagem {
+        width: 285px;
+    }
+
+    .form button {
+        width: 285px;
+    }
+
+    footer {
         width: 0;
-        
-       }
+
     }
-
-    
-   
-    .rede_social{
-        padding-left: 20px;
-    }
-
-    .rede_social p{
-        margin-left: -7px;
-    }
-
-    .rodape{
-        padding-left: 20px;
-    }
+}
 
 
-.fa-brands{
+
+.rede_social {
+    padding-left: 20px;
+}
+
+.rede_social p {
+    margin-left: -7px;
+}
+
+.rodape {
+    padding-left: 20px;
+}
+
+
+.fa-brands {
     font-size: 3rem;
     width: 15px;
     margin: 0 10px 0;
@@ -287,12 +310,12 @@ footer small {
     color: white;
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
     color: orange;
     cursor: pointer;
 }
 
-.fa-solid{
+.fa-solid {
     padding-top: 10px;
     color: white;
     display: flex;
@@ -301,47 +324,48 @@ footer small {
     width: 15px;
 }
 
-.fa-solid:hover{
+.fa-solid:hover {
     cursor: pointer;
     color: orange;
 }
-.rede_social{
+
+.rede_social {
     padding-top: 10px;
     display: inline-block;
-    padding-left: 300px;   
+    padding-left: 300px;
 }
 
-.cog-heading{
+.cog-heading {
     margin-left: 20px !important;
     color: rgba(6, 6, 160, 0.808) !important;
 }
 
-.t_contato{
+.t_contato {
     font-size: 2.5rem;
 }
 
-.rodape{
+.rodape {
     display: flex;
-    margin:auto;
+    margin: auto;
     padding-left: 250px;
 }
-                                                                                                                                          
 
-.cog-icon cog-i-cogicon{
+
+.cog-icon cog-i-cogicon {
     visibility: hidden !important;
 }
 
-.form{
+.form {
     margin-left: 320px;
 }
 
-label{
+label {
     font-size: 1.6rem;
     font-weight: 700;
     color: rgb(1, 1, 146);
 }
 
-input{
+input {
     border: 1px solid rgba(255, 68, 0, 0.651);
     border-radius: 5px;
     width: 350px;
@@ -351,7 +375,7 @@ input{
     font-size: 1.4rem;
 }
 
-textarea{
+textarea {
     margin-top: 10px;
     border: 1px solid rgba(255, 68, 0, 0.651);
     border-radius: 5px;
@@ -359,7 +383,7 @@ textarea{
     width: 350px;
 }
 
-button{
+button {
     border: 1px solid rgba(255, 68, 0, 0.651);
     border-radius: 5px;
     width: 350px;
@@ -369,24 +393,24 @@ button{
     margin-top: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(14, 14, 185);
     color: orange;
-    
+
 }
 
 
-.caixa-mensagem{
+.caixa-mensagem {
     width: 100%;
     height: 100%;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: orange;
     position: absolute;
 }
 
-.caixa-mensagem h3{
+.caixa-mensagem h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -401,16 +425,16 @@ button:hover{
     transform: translate(-50%, -50%);
     width: 150px;
     font-size: 1.6rem !important;
-    
+
 }
 
-.caixa-mensagem button a{
+.caixa-mensagem button a {
     font-size: 1.6rem;
     color: black;
 }
 
 
-.caixa-mensagem button a:hover{
+.caixa-mensagem button a:hover {
     color: orange;
-    
+
 }
