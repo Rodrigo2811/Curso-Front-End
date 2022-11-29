@@ -34,17 +34,18 @@ body {
 }
 
 .header-left h3 {
-  font-size: rem;
+
   color: hsl(27, 66%, 92%);
 }
 
 .container-grafico {
   display: block;
   background-color: hsl(33, 100%, 98%);
-  top: 55%;
+  top: 58%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
 
 }
 
@@ -62,9 +63,10 @@ body {
 
 }
 
-.grafico {
+#grafico {
   display: flex;
   align-items: flex-start;
+  margin: 0;
 
 }
 
@@ -153,7 +155,7 @@ body {
   background-color: hsl(28, 10%, 53%);
   display: flex;
   align-items: center;
-  margin: 0px auto 20px;
+  margin: 0px auto 10px;
 
 }
 
@@ -188,8 +190,16 @@ body {
 
 .point path {
   fill: hsl(10, 79%, 65%) !important;
+  border-radius: 5px !important;
 }
 
+.js-plotly-plot .plotly .main-svg {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  pointer-events: none;
+  border-radius: 10px;
+}
 
 
 .point path:hover {
