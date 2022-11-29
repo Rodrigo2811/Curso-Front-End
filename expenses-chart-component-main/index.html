@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <h5>My balance</h5>
+      <h3>$921.48</h3>
+    </div>
+    <div class="header-right">
+      <img src="./images/logo.svg" alt="">
+    </div>
+  </div>
+
+  <div class="container-grafico">
+
+    <div id="grafico" style="width:400px;height:380px;"></div>
+    <div class="linha"></div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <h5>Total this month</h5>
+        <h3>$478.33</h3>
+      </div>
+      <div class="footer-right">
+        <h6>+2.4%</h6>
+        <p>from last month</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="./plotly-2.16.1.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
