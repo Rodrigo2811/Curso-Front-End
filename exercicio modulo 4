@@ -1,0 +1,242 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPX4AnFrGEA3oFRsn/saSWC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Rodrigo2811/Curso-Front-End/blob/main/exercicio%20modulo%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RGYIOXcZPSsv",
+        "outputId": "bc1b55a3-ed00-4169-b4fb-980cebd7f921"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting carros.csv\n"
+          ]
+        }
+      ],
+      "source": [
+        "%%writefile carros.csv\n",
+        "id,valor_venda,valor_manutencao,portas,pessoas,porta_malas\n",
+        "1,vhigh,med,2,2,small\n",
+        "2,med,vhigh,2,2,small\n",
+        "3,low,vhigh,2,2,small\n",
+        "4,low,high,2,2,small\n",
+        "5,low,high,2,2,small\n",
+        "6,low,high,4,4,big\n",
+        "7,low,high,4,4,big\n",
+        "8,low,med,2,2,small\n",
+        "9,low,med,2,2,small\n",
+        "10,low,med,2,2,small\n",
+        "11,low,med,4,4,big\n",
+        "12,low,low,2,2,small\n",
+        "13,low,low,4,4,small\n",
+        "14,low,low,4,4,med"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile musica.txt\n",
+        "Roda Viva\n",
+        "Chico Buarque\n",
+        "Tem dias que a gente se sente\n",
+        "Como quem partiu ou morreu\n",
+        "A gente estancou de repente\n",
+        "Ou foi o mundo então que cresceu\n",
+        "A gente quer ter voz ativa\n",
+        "No nosso destino mandar\n",
+        "Mas eis que chega a roda viva\n",
+        "E carrega o destino pra lá\n",
+        "Roda mundo, roda-gigante\n",
+        "Roda moinho, roda pião\n",
+        "O tempo rodou num instante\n",
+        "Nas voltas do meu coração\n",
+        "A gente vai contra a corrente\n",
+        "Até não poder resistir\n",
+        "Na volta do barco é que sente\n",
+        "O quanto deixou de cumprir\n",
+        "Faz tempo que a gente cultiva\n",
+        "A mais linda roseira que há\n",
+        "Mas eis que chega a roda viva\n",
+        "E carrega a roseira pra lá\n",
+        "Roda mundo, roda-gigante\n",
+        "Roda moinho, roda pião"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MQRRVV2fP14I",
+        "outputId": "88190658-347f-428a-920a-cd782c1383c0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting musica.txt\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def extrai_coluna_csv(nome_arquivo: str, indice_coluna: int, tipo_dado: str):\n",
+        "\n",
+        "  coluna = []\n",
+        "\n",
+        "  with open (file=nome_arquivo, mode='r', encoding='utf8') as arquivo:\n",
+        "    linha = arquivo.readline()\n",
+        "    linha = arquivo.readline()\n",
+        "\n",
+        "    while linha:\n",
+        "      linha_separada = linha.split(',')\n",
+        "      linha = linha_separada[indice_coluna]\n",
+        "      \n",
+        "      if tipo_dado in linha == 'str':\n",
+        "        coluna.append(linha)\n",
+        "      else:\n",
+        "        coluna.append(str(linha))\n",
+        "      \n",
+        "      linha = arquivo.readline()\n",
+        "\n",
+        "  return coluna"
+      ],
+      "metadata": {
+        "id": "SuEfHnNNZeEL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor_venda = extrai_coluna_csv(\n",
+        "nome_arquivo='./carros.csv',\n",
+        "indice_coluna=1,\n",
+        "tipo_dado='str'\n",
+        ")\n",
+        "print(valor_venda)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j1L4n8qxZL1W",
+        "outputId": "fc2cddaa-5b72-475b-a667-a741013f4e9c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['vhigh', 'med', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pessoas = extrai_coluna_csv(\n",
+        "nome_arquivo='./carros.csv',\n",
+        "indice_coluna=4,\n",
+        "tipo_dado='int'\n",
+        ")\n",
+        "print(pessoas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GX6FdyhbZFuv",
+        "outputId": "7b21891f-851e-4b54-9f6a-c44e3552f98b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['2', '2', '2', '2', '2', '4', '4', '2', '2', '2', '4', '2', '4', '4']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def extrai_linha_txt(nome_arquivo: str, numero_linha: int):\n",
+        "\n",
+        "    with open(file=nome_arquivo, mode='r', encoding='utf8') as fp:\n",
+        "     linhas = fp.read().splitlines()\n",
+        "\n",
+        "    return linhas[numero_linha].split()\n",
+        "    "
+      ],
+      "metadata": {
+        "id": "ZPPf_-HJaf0n"
+      },
+      "execution_count": 119,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "linha10 = extrai_linha_txt(nome_arquivo='./musica.txt', numero_linha=8)\n",
+        "print(linha10) \n"
+      ],
+      "metadata": {
+        "id": "adcTBIpBfhag",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4b638ee5-9b39-4105-90c4-f343431374ae"
+      },
+      "execution_count": 123,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Mas', 'eis', 'que', 'chega', 'a', 'roda', 'viva']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
