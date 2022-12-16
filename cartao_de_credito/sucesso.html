@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="import" href="(https://fonts.google.com/specimen/Space+Grotesk)">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="img-left">
+      <img src="./images/bg-main-desktop.png" alt="">
+
+    </div>
+
+    <div class="cartao-frente">
+
+      <img src="./images/bg-card-front.png" alt="" srcset="">
+
+      <div class="dados-frente">
+        <div class="circulo-prata"></div>
+        <div class="circulo-prata-2"></div>
+        <input class="inpCartao" oninput="" placeholder=" 0000 0000 0000 0000" disable=""></input>
+        <input type="text" placeholder="Jane Appleseed" class="inpNome" maxlength="16" disabled=""></input>
+        <input type="text" placeholder="00" class="inpMes" disabled=""><input type="text" placeholder="00"
+          class="inpAno" maxlength="2" disabled="">
+
+      </div>
+    </div>
+
+    <div class="cartao-fundo">
+      <img src="./images/bg-card-back.png" alt="">
+
+      <div class="dados-fundo">
+        <p><input type="number" placeholder="000" class="codSeguranca inpSeguranca" maxlength="3" disabled=""></p>
+      </div>
+    </div>
+
+    <div class="container-sucess" target="_blank">
+      <i class="fa-solid fa-circle-check"></i> <br>
+      <span class="msg-sucesso">Thank you!</span> <br>
+      <span>We've added your card details</span>
+      <button type="button" value="Enviar" class="btn-continue">Continuar</button><br><br>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/6603d8438e.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

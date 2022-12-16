@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="import" href="(https://fonts.google.com/specimen/Space+Grotesk)">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="img-left">
+      <img src="./images/bg-main-desktop.png" alt="">
+
+    </div>
+
+    <div class="cartao-frente">
+
+      <img src="./images/bg-card-front.png" alt="" srcset="">
+
+      <div class="dados-frente">
+        <div class="circulo-prata"></div>
+        <div class="circulo-prata-2"></div>
+        <input class="inpCartao" oninput="" placeholder=" 0000 0000 0000 0000" disable=""></input>
+        <input type="text" placeholder="Jane Appleseed" class="inpNome" maxlength="16" disabled=""></input>
+        <input type="text" placeholder="00" class="inpMes" disabled=""><input type="text" placeholder="00"
+          class="inpAno" maxlength="2" disabled="">
+
+      </div>
+    </div>
+
+    <div class="cartao-fundo">
+      <img src="./images/bg-card-back.png" alt="">
+
+      <div class="dados-fundo">
+        <p><input type="text" placeholder="000" class="codSeguranca inpSeguranca" maxlength="3" disabled=""></p>
+      </div>
+
+    </div>
+
+    <div class="container-form">
+      <div class="form">
+        <form name="formulario" id="formulario" method="post" target="_blank">
+          <label for="Nome">NOME COMPLETO *</label><br>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="inNome"><br>
+          <Label for="cartao">NUMERO CARTÃO *</Label><br>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="cc" id="inCartao" maxlength="19"><br>
+          <label for="vencimento">VENCIMENTO (MÊS/ANO) *</label> <label id="label-cvc" for="CVC">CVC *</label><br>
+          <input type="text" placeholder="MM" id="inMes" maxlength="2"><input type="text" placeholder="YY" id="inAno"
+            maxlength="2">
+          <input type="text" placeholder="e.g. 123" id="inSeguranca">
+
+          <button type="button" onclick="validaForm()" value="Enviar" class="btn-confirm">Enviar</button><br><br>
+          <span id="msg-erro"></span><br>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="./requisicao.js"></script>
+  <script src="./script.js"></script>
+  <script src="./jquery-3.6.1.min.js"></script>
+
+
+</body>
+
+</html>
