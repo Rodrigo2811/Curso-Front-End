@@ -4,21 +4,21 @@ const main = document.getElementById('main')
 let text = ''
 
 
-function getUser(user){
+function getUser(user) {
 
 
-fetch(`${url}/${user}`)
-    .then((Response) => Response.json())
-    .then((data) => {
-        text += `${data.name} possui ${data.public_repos} no GitHub como ${data.login} <br>` 
-        main.innerHTML = text
-       })
-    .catch((error) => console.error('Erro: ', error.message || error))
+    fetch(`${url}/${user}`)
+        .then((Response) => Response.json())
+        .then((data) => {
+            text += `${data.name} possui ${data.public_repos} no GitHub como ${data.login} <br>`
+            main.innerHTML = text
+        })
+        .catch((error) => console.error('Erro: ', error.message || error))
 
 }
 const userInput = document.getElementById('username')
 
-userInput.addEventListener('focusout', function(event){
+userInput.addEventListener('focusout', function (event) {
     getUser(event.target.value)
 })
 
@@ -36,53 +36,53 @@ let postLength = 0
 
 
 // Cadastra um post
-function setPost(data){
+function setPost(data) {
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify(data),
-        headers:{
-            'Content-Type' : 'application/json; charset=UTF-8'
+        headers: {
+            'Content-Type': 'application/json; charset=UTF-8'
         }
     })
-    .then( response => response.json())
-    .then( data => console.log(data))
-    .catch(error => console.error(error))
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error))
 }
 
 // Solicita todos os posts
 
-function getPosts(){
+function getPosts() {
     fetch('https://jsonplaceholder.typicode.com/posts/', {
         headers: {
-            'Content-Type'  : 'application/json; charset=UTF-8'
+            'Content-Type': 'application/json; charset=UTF-8'
         }
     })
-    .then( response => response.json())
-    .then(data => {
-        postLength = data.length
-        console.log(postLength)
-    })
-    .catch(error => console.error(error))
+        .then(response => response.json())
+        .then(data => {
+            postLength = data.length
+            console.log(postLength)
+        })
+        .catch(error => console.error(error))
 }
 
 // Solicita um post por ID
 function getPost(id) {
     fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
         headers: {
-            'Content-Type' : 'application/json; charset=UTF-8'
+            'Content-Type': 'application/json; charset=UTF-8'
         }
     })
-    .then( response => response.json())
-    .then( post => { 
+        .then(response => response.json())
+        .then(post => {
             postMarkup += `
                 <div class="posts-item" id="post-${post.id}">
                     <h3>${post.title}</h3>
                     <p>${post.body}</p>
                 </div>
             `
-       containerPost.innerHTML = postMarkup
-     })
-    .catch(error => console.error(error))  
+            containerPost.innerHTML = postMarkup
+        })
+        .catch(error => console.error(error))
 }
 
 let postIndex = 1;
@@ -91,7 +91,7 @@ getPost(postIndex)
 
 const loadPost = document.getElementById('loadPost')
 
-loadPost.addEventListener('click', function(e) {
-    if(postIndex < postLength)
+loadPost.addEventListener('click', function (e) {
+    if (postIndex < postLength)
         getPost(postIndex += 1)
 })

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container-titulo {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+h3 {
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: hsl(0, 0%, 100%);
+  top: 30%;
+  left: 30%;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+}
+
+.teclado {
+  width: 50%;
+  justify-content: center;
+  align-items: stretch;
+  display: block;
+  padding: 12px;
+
+}
+
+label {
+  color: hsl(184, 14%, 56%);
+  font-size: .7rem;
+}
+
+.visor {
+  width: 280px;
+  height: 260px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  margin: auto auto;
+
+}
+
+.teclado button {
+  width: 85px;
+  padding: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  margin: 5px auto;
+  cursor: pointer;
+  font-family: 'Space Mono';
+}
+
+
+.teclado button:active {
+
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(186, 14%, 43%);
+
+}
+
+
+
+.btn-custom {
+  background: hsl(189, 41%, 97%) !important;
+  color: hsl(186, 14%, 43%) !important;
+  width: 85px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-size: 1rem;
+  outline: 0;
+
+}
+
+.icone-cifrao {
+  position: absolute;
+  top: 55px;
+  left: 25px;
+}
+
+.icone-pessoa {
+  position: absolute;
+  top: 265px;
+  left: 25px;
+}
+
+input {
+  margin-top: 5px;
+  width: 100%;
+  font-size: 24px;
+  padding: 5px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  text-align: right;
+}
+
+.visor1,
+.visor2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: .7rem;
+  margin: 15px auto;
+  height: 60px;
+}
+
+.visor1 p,
+.visor2 p {
+  color: white;
+}
+
+.resultado1,
+.resultado2 {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%) !important;
+
+}
+
+.resultado1 {
+  width: 35%;
+
+}
+
+.resultado2 {
+  width: 35%;
+}
+
+#btn-reset {
+  width: 200px;
+  padding: 8px;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  margin: 50px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.containerTaxa {
+  margin-top: -15px;
+}
+
+
+.containerQqtdPessoas {
+  margin-top: -15px;
+}
+
+form {
+  display: contents;
+}
+
+
+@media screen and (max-width: 875px) {
+
+
+  body {
+    width: 300px;
+  }
+
+  .container-titulo {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0 auto;
+    position: absolute;
+
+
+
+  }
+
+  .container {
+    max-width: 300px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    justify-content: center;
+
+
+  }
+
+  .teclado {
+    width: 100%;
+  }
+}
+
+
+button.ativo .taxa:nth-child(1) {
+  background-color: red;
+}
