@@ -184,7 +184,7 @@ section h2 {
 .container3 {
   display: flex;
   width: 75%;
-  height: 200px;
+  height: auto;
   background-color: hsl(256, 26%, 20%);
   margin: 50px auto;
 }
@@ -202,7 +202,7 @@ section h2 {
 }
 
 .container3 img {
-  height: 100%;
+  height: auto;
   position: relative;
 }
 
@@ -233,15 +233,16 @@ footer {
   background-image: url(../images/bg-pattern-footer-desktop.svg);
   background-color: hsl(0, 0%, 98%);
   background-repeat: no-repeat;
+  margin-top: 200px;
 
 
 
 }
 
 .footer2 {
-
   display: flex;
   justify-content: space-around;
+  margin: 200px auto;
 }
 
 .footer2 h6 {
@@ -318,6 +319,34 @@ footer {
 
 .btn-fechar {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .img-tablet {
+    display: none;
+  }
+
+  .container3 img {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container3 button {
+    position: absolute;
+    left: 50%;
+  }
+
+  .container3 h3 {
+    width: auto;
+  }
+
 }
 
 @media screen and (max-width: 475px) {
