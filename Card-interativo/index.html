@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styele.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="icone">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+    </div>
+
+    <div class="text">
+      <h2>How did we do?</h2><br>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+    </div>
+
+    <form action="" id="form-avaliacao">
+      <div class="avaliacao">
+        <button class="circulo av1" onclick="selecionar1(1)" value="1" id="av1">1</button>
+        <button class="circulo av2" onclick="selecionar2(2)" value="2" id="av2">2</button>
+        <button class="circulo av3" onclick="selecionar3(3)" value="3" id="av3">3</button>
+        <button class="circulo av4" onclick="selecionar4(4)" value="4" id="av4">4</button>
+        <button class="circulo av5" onclick="selecionar5(5)" value="5" id="av5">5</button>
+      </div>
+      <input type="submit" class="btn-enviar" value="enviar"></input>
+    </form>
+    <span id="resp"></span>
+  </div>
+
+  <div class="container-confimarcao">
+    <div class="header-confirmacao">
+      <div class="containerImg">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+
+      <div class="container-mensagem">
+        <p id="msgAvaliacao" class="resp"></p>
+      </div>
+
+    </div>
+
+    <div class="text-confirmacao">
+      <h2>Thank you!</h2><br>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
