@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  background-color: hsl(236, 33%, 92%);
+}
+
+.cabecalho {
+  width: 100%;
+
+}
+
+.cabecalho img {
+  width: 100%;
+}
+
+.cabecalho h1 {
+  position: absolute;
+  z-index: 2;
+  align-content: center;
+  display: flex;
+
+  color: white;
+}
+
+#container-tarefa {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  transform: translate(0, -120px);
+}
+
+#inpTarefa {
+  width: 500px;
+  padding: 20px;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+}
+
+.titulo-cabecalho {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  align-content: center;
+  justify-content: space-between;
+  margin: 100px 410px;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  background-color: transparent;
+
+
+}
+
+.container-titulo {
+  width: 50px;
+  border: none;
+}
+
+.container-btn-light button {
+  background-color: transparent;
+  border: none;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.containerLinstaTarefa {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  transform: translate(0, -550px);
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px 5px hsl(233, 11%, 84%);
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.rodape {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2px;
+
+}
+
+button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#lista {
+  width: 100%;
+  padding: 5px;
+}
+
+#lista p {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  padding: 5px;
+}
+
+checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(237, 87%, 48%);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+checkbox svg {
+  display: flex;
+  margin: 5px auto;
+}
+
+.ativo {
+  background-image: linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+}
+
+.ativo2 {
+  text-decoration: line-through;
+}
+
+.btn-darck {
+  visibility: hidden;
+}
+
+buttonDarck{
+  color: white;
+}
+
+.btns{
+  margin-top: 5px;
+}
+
+#nTarefas{
+  margin-top: 5px;
+}
